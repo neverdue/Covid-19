@@ -14,7 +14,9 @@ app.controller('MyCtrl', ($scope, $http) => {
     });
 
     $scope.get_c_data = () => {
-      let country = $scope.c;
+      let country = ""
+
+      country = $scope.c;
       if (country === "") {
         $scope.c_data = undefined;
         return undefined;
